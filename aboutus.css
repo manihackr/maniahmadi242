@@ -1,0 +1,141 @@
+/* aboutus.css */
+body {
+  font-family: "Vazir", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* حداقل ارتفاع صفحه برابر با ارتفاع صفحه نمایش */
+}
+
+.container {
+  flex: 1; /* محتوای اصلی را گسترش دهید تا فوتر به پایین فشار داده شود */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #000 !important;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.back-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.back-button i {
+  margin-left: 5px;
+}
+
+/* Media Queries برای ریسپانسیو کردن */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .card-subtitle {
+    font-size: 14px;
+  }
+
+  .back-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
+/* اضافه کردن به فایل aboutus.css */
+@keyframes rotateIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: rotateIn 0.5s ease-in-out;
+  margin-top: 50px;
+}
