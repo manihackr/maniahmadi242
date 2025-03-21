@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ثبت نام</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/register.css" />
+  </head>
+  <body>
+
+    <div class="vasat">
+      <div class="register-container">
+        <h1>ثبت نام</h1>
+        <form id="register-form" action="./index.html">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              name="username"
+              placeholder="نام کاربری"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="شماره تماس"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="birthdate"
+              name="birthdate"
+              placeholder="ماه و روز تاریخ تولد"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="رمز عبور"
+              required
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="rules"
+              name="rules"
+              required
+            />
+            <label class="form-check-label" for="rules">قوانین را می‌پذیرم</label>
+          </div>
+          <button type="submit" class="btn btn-primary">ثبت نام</button>
+          <div class="signup-link">
+            <a href="./login.html">اگر قبلاً ثبت نام کرده‌اید، ورود کنید</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

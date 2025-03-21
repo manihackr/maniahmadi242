@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ورود</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>ورود</h1>
+      <form
+        id="login-form"
+        action="./index.html"
+        onsubmit="return validateForm(event)"
+      >
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="نام کاربری"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <div class="input-group">
+            <input
+              type="password"
+              class="form-control password"
+              id="password"
+              name="password"
+              placeholder="رمز عبور"
+              required
+            />
+            <button
+              type="button"
+              class="btn btn-outline-secondary showb"
+              id="showb"
+            >
+              👀
+            </button>
+          </div>
+        </div>
+        <div class="form-check-ghanon">
+          <input type="checkbox" required name="ghanon" id="ghanon" />
+          <label for="ghanon">قوانین را می‌پذیرم</label>
+        </div>
+        <button type="submit" class="btn btn-primary">تایید</button>
+        <div class="signup-link">
+          <a href="./register.html">اگر حسابی ندارید ثبت نام کنید</a>
+        </div>
+      </form>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>
